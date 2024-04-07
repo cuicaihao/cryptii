@@ -16,8 +16,13 @@ COPY . .
 # Build the app
 RUN npm run build
 
+RUN npm install -g http-server
+
 # Expose port 8080 for the app to listen on
 EXPOSE 8080
+
+# Run the app
+CMD [ "http-server"]
 
 # Install express
 # RUN npm install express
@@ -27,7 +32,7 @@ EXPOSE 8080
 # CMD [ "npm" , "start" ]
 
 # Run the app with python server
-CMD [ "python3", "-m", "http.server", "8080" ]
+# CMD [ "python3", "-m", "http.server", "8080" ]
 
 
 # docker build -t cryptii_app .
