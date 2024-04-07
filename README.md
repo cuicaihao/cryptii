@@ -16,6 +16,10 @@ Web app and framework offering modular conversion, encoding and encryption. Tran
   - Install dependencies: `npm ci`
   - Run build tasks: `npm run build`
   - Run build tasks on file change: `npm run watch`
+- Install the http-server and run
+  - `npm install --global http-server`
+  - start the server `http-server`
+  - By default, this will start the server on localhost and port 8080. You can then open your web browser and navigate to http://localhost:8080 to view your index.html file.
 - [Contribute to the project](CONTRIBUTING.md) or [report an issue](https://github.com/cryptii/cryptii/issues/new/choose)
 
 ## Concept
